@@ -1,0 +1,154 @@
+/* Reset & general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #374151;
+}
+
+/* Expense Total Card */
+.total-card {
+    background: #36A2EB;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Form */
+form.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+form input, form select {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+form input:focus, form select:focus {
+    border-color: #36A2EB;
+    outline: none;
+    box-shadow: 0 0 8px rgba(54,162,235,0.3);
+}
+form button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #36A2EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+form button:hover {
+    background: #2b88c8;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+table th {
+    background: #1f2937;
+    color: white;
+    font-weight: 600;
+}
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+table tr:hover {
+    background: #e0f2fe;
+}
+a.delete {
+    color: #ef4444;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.delete:hover {
+    text-decoration: underline;
+}
+
+/* Category badges */
+.category-badge {
+    padding: 5px 12px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+.category-1 { background: #f97316; } /* Food - orange */
+.category-2 { background: #3b82f6; } /* Transport - blue */
+.category-3 { background: #8b5cf6; } /* Entertainment - purple */
+.category-4 { background: #10b981; } /* Shopping - green */
+.category-5 { background: #f43f5e; } /* Bills - red */
+.category-6 { background: #0ea5e9; } /* Health - cyan */
+.category-7 { background: #eab308; } /* Education - yellow */
+.category-8 { background: #6366f1; } /* Travel - indigo */
+.category-9 { background: #f472b6; } /* Savings - pink */
+.category-10 { background: #64748b; } /* Miscellaneous - gray */
+
+/* Chart */
+canvas {
+    display: block;
+    margin: 0 auto 40px auto;
+    max-width: 600px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    form.form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
